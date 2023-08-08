@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <h1>Resume Builder</h1>
+    
+    <section class="personal-details">
+      <h2>Personal Details</h2>
+      <input type="text" placeholder="Full Name">
+      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Phone Number">
+    </section>
+    
+    <section class="education">
+      <h2>Education</h2>
+      <input type="text" placeholder="School/University Name">
+      <input type="text" placeholder="Degree">
+      <input type="text" placeholder="Major">
+    </section>
+    
+    <section class="work-experience">
+      <h2>Work Experience</h2>
+      <input type="text" placeholder="Job Title">
+      <input type="text" placeholder="Company Name">
+      <textarea placeholder="Job Description"></textarea>
+    </section>
+    
+    <section class="skills">
+      <h2>Skills</h2>
+      <input type="text" placeholder="Skill 1">
+      <input type="text" placeholder="Skill 2">
+      <input type="text" placeholder="Skill 3">
+    </section>
+    
+    <section class="projects">
+      <h2>Projects</h2>
+      <input type="text" placeholder="Project Name">
+      <textarea placeholder="Project Description"></textarea>
+    </section>
+    
+    <button id="download-button">Download Resume</button>
+  </div>
+  
+  <script>
+    const downloadButton = document.getElementById('download-button');
+    
+    downloadButton.addEventListener('click', () => {
+      // Replace this with code to generate and download the resume in desired format (e.g., PDF).
+      // You can use libraries like jsPDF or html2pdf for generating PDFs.
+      alert('Download functionality will be implemented here.');
+    });
+  </script>
+</body>
+</html>
